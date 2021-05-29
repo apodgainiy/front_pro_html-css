@@ -346,5 +346,55 @@ header {
     bottom: 4px;
 }
 
-
 /*slider-end*/
+
+/*actuality*/
+
+.actuality {
+
+}
+
+.actuality__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actuality__item:last-of-type {
+    margin-top: 20px;
+}
+
+.actuality__item {
+    display: block;
+    height: 260px;
+    position: relative;
+}
+
+.actuality__item:hover {
+    opacity: 0.5;
+}
+
+.actuality_big {
+    height: 542px;
+}
+
+.actuality__img {
+}
+
+.actuality__heading {
+    position: absolute;
+    margin: 0;
+    top: 26px;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 16px 20px;
+    background: #ffffff;
+    color: #222222;
+}
+
+.actuality__span {
+    display: block;
+    font-size: 30px;
+}
+
+/*actuality-end*/
