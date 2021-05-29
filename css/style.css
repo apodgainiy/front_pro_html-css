@@ -51,7 +51,7 @@ header {
     margin-right: 10px;
 }
 
-.logo__letter {
+.red-letter {
     color: #f16d7f;
     font-weight: 900;
 }
@@ -314,3 +314,37 @@ header {
 }
 
 /*nav-end*/
+
+/*slider*/
+
+.slider {
+    background-color: #e8e8e8;
+}
+
+.slider__heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 60px;
+    position: relative;
+    padding: 220px 500px 300px 20px;
+    background: url("../img/slider.png") 15px -150px;
+}
+
+.slider__down-text {
+    position: relative;
+    display: block;
+    font-size: 40px;
+}
+
+.slider__down-text:before {
+    content: "";
+    width: 12px;
+    background-color: #f16d7f;
+    position: absolute;
+    top: -56px;
+    left: -20px;
+    bottom: 4px;
+}
+
+
+/*slider-end*/
