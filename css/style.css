@@ -276,3 +276,41 @@ header {
 .cart {
     margin-right: 26px;
 }
+
+/*header-end*/
+
+/*nav*/
+
+.menu {
+
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 684px;
+    margin: 0 auto;
+
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    display: block;
+    text-decoration: none;
+    color: #222222;
+    padding: 18px 18px;
+}
+
+.menu__link:hover {
+    color: #ffffff;
+    background-color: #a4a4a4;
+}
+
+/*nav-end*/
