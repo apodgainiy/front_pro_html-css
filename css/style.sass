@@ -1,0 +1,665 @@
+/* Remove outline on the forms and links */
+*:active,
+*:hover,
+*:focus
+  outline: 0
+  outline-offset: 0
+/* Remove outline on the forms and links end*/
+
+
+body
+  font-family: lato, sans-serif
+
+.container
+  max-width: 1140px
+  margin: 0 auto
+
+.header
+  border-bottom: 2px solid #ececec
+
+.header__wrapper
+  display: flex
+  justify-content: space-between
+
+.header__left, .header__right
+  display: flex
+  align-items: center
+
+.logo
+  display: flex
+  align-items: center
+  margin: 20px 30px 20px 0
+
+.logo__link
+  display: flex
+  align-items: center
+
+  text-decoration: none
+  text-transform: uppercase
+
+  font-weight: 300
+  color: #222222
+  font-size: 27px
+
+.logo__img
+  margin-right: 10px
+
+.red-letter
+  color: #f16d7f
+  font-weight: 900
+
+/* details */
+
+.details
+  max-width: 500px
+  margin: 20px auto
+
+.details__item
+  position: relative
+
+  border: 1px solid #e6e6e6
+  border-radius: 5px 0 0 5px
+  border-right: none
+
+.details__title
+  display: block
+  padding: 10px 30px 10px 15px
+  position: relative
+
+  font-weight: 300
+  font-size: 14px
+  color: #222222
+  cursor: pointer
+  background-color: #f9f9f9
+  border-radius: 5px 0 0 5px
+
+  transition: background .2s ease-out
+
+.details__title:after
+  content: ""
+  display: block
+
+  border-style: solid
+  border-width: 8px 5px 0 5px
+  border-color: #838383 transparent transparent transparent
+
+  position: absolute
+  top: 50%
+  right: 15px
+
+  transform: translateY(-50%)
+
+.details__title:hover
+  background-color: #ffffff
+
+.details__input
+  width: 0
+  height: 0
+
+  -webkit-appearance: none
+  appearance: none
+
+  position: absolute
+
+.details__input:checked ~ .details__title
+  background-color: #ffffff
+
+.details__input:checked ~ .details__title:after
+  border-style: solid
+  border-width: 0 5px 8px 5px
+  border-color: transparent transparent #838383 transparent
+
+.details__input:checked ~ .details__box
+  display: block
+  opacity: 1
+  max-height: 500px
+
+.details__box
+  /* display: none */
+  position: absolute
+  opacity: 0
+  max-height: 0
+  padding: 10px 15px
+
+  color: #4f4f4f
+  font-size: 14px
+
+  transition: 1s
+
+/* details end*/
+/* details-red */
+
+.details-red
+  max-width: 500px
+  margin: 20px auto
+
+.details-red__item
+  position: relative
+
+  border: 1px solid #f16d7f
+
+.details-red__title
+  display: block
+  padding: 10px 30px 10px 15px
+  position: relative
+
+  color: #ffffff
+  cursor: pointer
+  background-color: #f16d7f
+
+  transition: background .2s ease-out
+
+.details-red__title:after
+  content: ""
+  display: block
+
+  border-style: solid
+  border-width: 8px 5px 0 5px
+  border-color: #ffffff transparent transparent transparent
+
+  position: absolute
+  top: 50%
+  right: 15px
+
+  transform: translateY(-50%)
+
+.details-red__title:hover
+  background-color: #ffffff
+  color: #f16d7f
+
+.details-red__title:hover:after
+  border-color: #f16d7f transparent transparent transparent
+
+.details-red__input
+  width: 0
+  height: 0
+
+  -webkit-appearance: none
+  appearance: none
+
+  position: absolute
+
+.details-red__input:checked ~ .details-red__title
+  background-color: #ffffff
+  color: #f16d7f
+
+.details-red__input:checked ~ .details-red__title:after
+  border-style: solid
+  border-width: 0 5px 8px 5px
+  border-color: transparent transparent #f16d7f transparent
+
+.details-red__input:checked ~ .details-red__box
+  display: block
+  opacity: 1
+  max-height: 500px
+
+.details-red__box
+  /* display: none */
+  position: absolute
+  opacity: 0
+  max-height: 0
+  padding: 10px 15px
+
+  color: #4f4f4f
+  font-size: 14px
+
+  transition: 1s
+
+/* details-red end*/
+
+
+.search
+  display: flex
+  align-items: center
+
+.search__input
+  border: 1px solid #e6e6e6
+  height: 34px
+  padding: 1px 10px
+
+.search__input::placeholder
+  font-size: 14px
+  color: #a4a4a4
+
+.search__btn
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid #e6e6e6
+  border-left: none
+  height: 38px
+  width: 38px
+  color: #a4a4a4
+  border-radius: 0 5px 5px 0
+
+.search__btn:hover
+  background-color: #ffffff
+
+.search__btn:active
+  background-color: #f9f9f9
+
+.cart
+  margin-right: 26px
+
+/*header-end*/
+
+/*nav*/
+
+
+.menu__list
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 684px
+  margin: 0 auto
+
+  font-weight: 700
+  font-size: 14px
+  text-transform: uppercase
+
+.menu__item
+  list-style: none
+
+.menu__link
+  display: block
+  text-decoration: none
+  color: #222222
+  padding: 18px 18px
+
+.menu__link:hover
+  color: #ffffff
+  background-color: #a4a4a4
+
+/*nav-end*/
+
+/*slider*/
+
+.slider
+  background-color: #e8e8e8
+  margin: 0 0 100px 0
+
+.slider__heading
+  text-transform: uppercase
+  font-weight: 900
+  font-size: 60px
+  position: relative
+  padding: 220px 500px 300px 20px
+  background: url("../img/slider.png") 15px -150px
+  margin: 0
+
+.slider__down-text
+  position: relative
+  display: block
+  font-size: 40px
+
+.slider__down-text:before
+  content: ""
+  width: 12px
+  background-color: #f16d7f
+  position: absolute
+  top: -56px
+  left: -20px
+  bottom: 4px
+
+/*slider-end*/
+
+/*actuality*/
+
+.actuality
+  margin: 100px 0
+
+.actuality__wrapper
+  display: flex
+  justify-content: space-between
+
+.actuality__item:last-of-type
+  margin-top: 20px
+
+.actuality__item
+  display: block
+  height: 260px
+  position: relative
+
+.actuality__item:hover
+  opacity: 0.5
+
+.actuality_big
+  height: 542px
+
+.actuality__heading
+  position: absolute
+  margin: 0
+  top: 26px
+  font-size: 18px
+  font-weight: 900
+  text-transform: uppercase
+  padding: 16px 20px
+  background: #ffffff
+  color: #222222
+
+.actuality__span
+  display: block
+  font-size: 30px
+
+/*actuality-end*/
+
+/*featured-items*/
+
+.featured-items
+  margin: 100px 0
+
+.featured-items__header
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 0 0 60px 0
+
+.featured-items__title
+  font-size: 30px
+  font-weight: 600
+  text-transform: capitalize
+  margin: 0
+
+.featured-items__subtitle
+  font-size: 14px
+  font-weight: 400
+  color: #9f9f9f
+  line-height: 30px
+  margin: 0
+
+.product-card__wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  row-gap: 40px
+
+.product-card
+  display: block
+  text-decoration: none
+  text-transform: uppercase
+  font-size: 13px
+  font-weight: 400
+  color: #222222
+  position: relative
+
+.product-card:hover .product-card__hover
+  display: flex
+
+.product-card__img
+  height: 279px
+
+
+.product-card__price
+  font-size: 16px
+  font-weight: 600
+  color: #f16d7f
+
+.product-card__hover
+  display: none
+  justify-content: center
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  background: rgba(0,0,0, 0.5)
+
+.product-card__btn
+  display: flex
+  align-items: center
+  margin: 100px 0 135px 0
+  color: #ffffff
+  text-transform: capitalize
+  font-size: 13px
+  font-weight: 600
+  border: 1px solid #ffffff
+  background: none
+
+
+
+.center
+  display: flex
+  justify-content: center
+
+.red-link
+  margin: 60px 0 0 0
+  padding: 20px 24px
+  text-decoration: none
+  color: #ffffff
+  background: #f16d7f
+
+
+
+/*featured-items-end*/
+
+
+.offer
+  margin-bottom: 100px
+  display: flex
+  width: 100%
+
+.offer-img
+  background-image: url(../img/Layer_38.png)
+  background-repeat: no-repeat
+  width: 767px
+
+.offer-h2
+  font-weight: 900
+  text-transform: uppercase
+  font-size: 53px
+  color: #fff
+  margin-top: 127px
+  margin-left: 37px
+  margin-bottom: 290px
+
+.offer-h2__color
+  color: #f16d7f
+
+.offer-h2__bottom
+  display: block
+  font-size: 33px
+  margin-top: -16px
+
+.offer-info
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: #222224
+  flex-grow: 1
+  justify-content: center
+
+.offer-card
+  display: flex
+  justify-content: flex-start
+  margin-top: 28px
+  margin-bottom: 28px
+  width: 100%
+
+.offer-card-image
+  width: 110px
+  display: flex
+  justify-content: center
+  align-items: start
+
+.offer-card__h3
+  width: 230px
+  font-weight: 400
+  font-size: 20px
+  color: #fff
+
+.offer-card__span
+  font-weight: 100
+  font-size: 14px
+  display: block
+
+.subscribe
+  /*margin-top: 100px*/
+  background-image: url(../img/Layer_41.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-color: #eee
+  background-size: cover
+
+.subscribe-block
+  display: flex
+  width: 100%
+
+.subscribe-comment
+  flex: 1 1 1170px
+  display: flex
+  justify-content: space-between
+  color: #222
+  margin-top: 110px
+
+
+.subscribe-comment__avatar
+  width: 110px
+  display: flex
+  justify-content: center
+  align-items: start
+
+.subscribe-comment__img
+  border-radius: 50%
+  width: 83px
+  height: 83px
+
+.subscribe-comment__comment
+  width: 390px
+  margin-top: 11px
+  margin-right: 60px
+  margin-bottom: 15px
+
+.subscribe-comment__p
+  font-size: 12px
+  margin-top: 15px
+
+.subscribe-comment__span
+  color: #f16d7f
+  font-size: 16px
+  display: block
+
+.subscribe-line
+  width: 1px
+  background-color: #e3e3e3
+  flex: 0 0 1px
+
+.subscribe-form
+  flex: 1 1 1170px
+  color: #222
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  min-height: 438px
+
+.subscribe-form__h2
+  text-transform: uppercase
+  font-weight: 400
+  font-size: 24px
+  margin-top: -30px
+
+.subscribe-form__p
+  text-transform: uppercase
+  font-size: 14px
+
+
+.subscribe-form__form
+  display: flex
+  font-size: 14px
+  margin-top: 30px
+
+.subscribe-form__input
+  color: #838384
+  padding: 11px 0 11px 28px
+  border: none
+  border-top-left-radius: 22px
+  border-bottom-left-radius: 22px
+
+
+.subscribe-form__button
+  display: flex
+  align-items: center
+  padding: 0 21px 0 21px
+  background-color: #f16d7f
+  border-top-right-radius: 22px
+  border-bottom-right-radius: 22px
+  text-decoration: none
+  color: #fff
+
+.subscribe-comment__line
+  display: inline-block
+  width: 38px
+  height: 4px
+  background-color: #d6d6d6
+  margin: 40px 10px
+
+.line-color
+  background-color: #f16d7f
+
+.first-line
+  margin-left: 0
+
+.footer-nav
+  display: flex
+  width: 100%
+  margin-top: 105px
+  margin-bottom: 90px
+
+.footer-nav__logo
+  flex: 1 0 435px
+
+.footer-nav__p
+  color: #bebebe
+  margin-top: 30px
+  margin-bottom: 30px
+
+.footer-nav__coll
+  display: flex
+  flex-direction: column
+  align-items: center
+  flex: 1 1 250px
+
+
+.footer-nav__header
+  text-decoration: none
+  display: flex
+  text-transform: uppercase
+  color: #f16d7f
+  font-weight: 600
+  margin-top: 15px
+  margin-bottom: 30px
+
+.footer-nav__item
+  text-decoration: none
+  display: flex
+  text-transform: capitalize
+  color: #898989
+  margin-top: 15px
+  margin-bottom: 15px
+
+.footer-color
+  background-color: #e6e6e6
+
+.footer
+  display: flex
+  align-items: center
+  width: 100%
+
+.footer-copyright
+  margin: 30px auto 30px 0
+
+.footer-social
+  display: flex
+  width: 32px
+  height: 32px
+  justify-content: center
+  align-items: center
+  color: #b2b2b2
+  margin: 4px
+  text-decoration: none
+  background-color: #fff
+
+.footer-social:hover
+  background-color: #eee
+
+.footer-social:active
+  background-color: #f16d7f
