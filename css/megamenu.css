@@ -1,0 +1,156 @@
+.menu-link-box {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  top: 70px;
+  padding: 20px;
+}
+
+.menu-link-box-list {
+  background-color: #ffffff;
+  margin-right: 40px;
+}
+
+.menu-link-box-list:last-of-type {
+  margin-right: 0;
+}
+
+.menu-link-box-list h3 {
+  border-bottom: 1px solid #e8e8e8;
+  text-transform: uppercase;
+  color: #232323;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  letter-spacing: 0.35px;
+  width: 235px;
+}
+
+.menu-link-box-list ul {
+  width: 100%;
+}
+
+.menu-link-box-list a {
+  color: #646464;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+}
+
+.menu-link-box-list a:hover {
+  color: #f16d7f;
+}
+
+.menu-box-list-unit {
+  margin-top: 22px;
+}
+
+.menu-box-list-unit-img {
+  position: relative;
+  margin-top: 15px;
+  margin-left: -20px;
+}
+
+.menu-box-unittxt {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+}
+
+.menu-img-box {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.pic-box {
+  height: 128px;
+}
+
+.ssale-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.menu-link-box:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  top: -5px;
+  left: 40px;
+  border-top: #e8e8e8 1px solid;
+  border-left: #e8e8e8 1px solid;
+}
+
+.menu li:hover .menu-link-box {
+  display: flex;
+}
+
+.menu-link:hover {
+  color: #f16d7f;
+}
+
+.last:hover .menu-link-box {
+  display: flex;
+  right: 0;
+}
+
+.last:hover .menu-link-box:before {
+  top: -5px;
+  right: 55px;
+  left: auto;
+}
+
+.last:hover .menu-box-unittxt p {
+  animation: saleAnim 0.5s linear 0s infinite normal;
+}
+
+.menu li:hover .menu-box-unittxt p {
+  animation: saleAnim 0.5s linear 0s infinite normal;
+}
+
+.my-acc, .baplink {
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.ssale-link:hover p {
+  color: #f16d7f;
+  transform: scale(1.25);
+  transition: 0.5s;
+}
+
+@keyframes saleAnim {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #f16d7f;
+    transform: scale(1.25);
+  }
+}
+.ssale-link:hover {
+  box-shadow: #f16d7f 0 0 15px;
+  transition: 0.5s;
+}
+
+.ssale-link p {
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=megamenu.css.map */
